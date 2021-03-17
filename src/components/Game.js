@@ -31,6 +31,7 @@ class Game extends React.Component {
           squares: squares,
         },
       ]),
+      stepNumber: history.length,
       xIsNext: !this.state.xIsNext,
     }); //this allows the state of the box to be set within the board component class instead of the individual square components(each square is rendered as a component).
     //When the Board’s state changes, the Square components re-render automatically. Keeping the state of all squares in the Board component will allow it to determine the winner in the future.
